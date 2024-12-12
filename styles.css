@@ -24,10 +24,30 @@ img {
     border: solid 1px red;
     margin-inline: 2em;
     background-color: #e5e5e5;
+    padding: 1rem;
+    max-height: 500px;
+    /*overflow: hidden; */
 }
+
+.component-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.component-header ul li {
+    margin-right: 1.325rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+}
+
 
 .card {
     background-color: white;
+    padding-inline: 0.5em;
+    border: solid 1px blue;
 }
 
 .card__main-pic img {
@@ -37,9 +57,14 @@ img {
 .mini-gallery { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
+    gap: 2px;
 }
 
 .mini-gallery img {
     border-radius: 8px;
+}
+
+.category-downloads {
+    display: flex;
+    justify-content: space-between;
 }
