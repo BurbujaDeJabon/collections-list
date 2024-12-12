@@ -13,6 +13,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Global */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .wrapper {
     border: solid 1px red;
     margin-inline: 2em;
@@ -21,4 +28,18 @@ body {
 
 .card {
     background-color: white;
+}
+
+.card__main-pic img {
+    border-radius: 16px;
+}
+
+.mini-gallery { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.mini-gallery img {
+    border-radius: 8px;
 }
